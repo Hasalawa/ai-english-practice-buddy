@@ -1,5 +1,7 @@
 # AI English Practice Buddy
 
+![CI](https://github.com/YOUR_USERNAME/ai-english-practice-buddy/actions/workflows/ci.yml/badge.svg)
+
 An AI-powered English practice tool built for my friend, who is improving their English.
 
 ## Features
@@ -31,3 +33,10 @@ Optional env vars: `OLLAMA_MODEL` (default `gemma3:1b`), `OLLAMA_URL`.
 ```
 Browser -> POST /check -> Flask -> Ollama -> Gemma -> JSON -> Browser
 ```
+
+## Tests
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+GitHub Actions runs lint (ruff) and tests on every push and pull request. The AI call is mocked, so CI doesn't need Ollama.
