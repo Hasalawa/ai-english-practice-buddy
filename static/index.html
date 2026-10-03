@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI English Buddy</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>AI English Buddy</h1>
+    <p class="sub">Type a sentence. I'll fix it and explain why.</p>
+
+    <label for="sentence">Write your sentence:</label>
+    <textarea id="sentence" rows="3" maxlength="500"
+      placeholder="I am go to university yesterday."></textarea>
+    <button id="check">Check Sentence</button>
+
+    <section id="result" hidden aria-live="polite">
+      <div id="status" class="status"></div>
+      <div class="block" id="corrected-block">
+        <h2>✅ Corrected</h2><p id="corrected"></p>
+      </div>
+      <div class="block">
+        <h2>💡 Why?</h2><p id="explanation"></p>
+      </div>
+      <div class="block" id="better-block">
+        <h2>✨ Better version</h2><p id="better"></p>
+      </div>
+      <div class="block">
+        <h2>📝 Example</h2><p id="example"></p>
+      </div>
+    </section>
+    <p id="error" class="error" hidden></p>
+  </main>
+  <footer>Runs locally with Gemma via Ollama — your sentences never leave your laptop.</footer>
+  <script src="/static/script.js"></script>
+</body>
+</html>
