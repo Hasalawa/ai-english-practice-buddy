@@ -1,6 +1,6 @@
 # AI English Practice Buddy
 
-![CI](https://github.com/YOUR_USERNAME/ai-english-practice-buddy/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Hasalawa/ai-english-practice-buddy/actions/workflows/ci.yml/badge.svg)
 
 An AI-powered English practice tool built for my friend, who is improving their English.
 
